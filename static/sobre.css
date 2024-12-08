@@ -1,0 +1,92 @@
+/* Resetando margens e padding padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das seções */
+section h2 {
+    color: #4CAF50; /* Cor verde */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Lista de valores */
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}

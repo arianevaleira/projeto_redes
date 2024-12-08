@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários Cadastrados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='usuarios.css') }}">
+</head>
+<body>
+    {% extends "home.html" %}
+
+    {% block conteudo %}
+    <h2>Lista de Usuários Cadastrados</h2><br>
+    <ul>
+        {% if usuarios %}
+            {% for usuario in usuarios %}
+                <li>ID: {{ usuario.id }}, Nome: {{ usuario.nome }}, Email: {{ usuario.email }}</li>
+            {% endfor %}
+        {% else %}
+            <p>Não há usuários cadastrados.</p>
+        {% endif %}
+    </ul>
+    <p><a href="{{ url_for('home') }}">Voltar para Home</a></p>
+    {% endblock %}
+</body>
+</html>

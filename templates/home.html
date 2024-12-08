@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Pagina Home</div>
+        <nav class="nav">
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="{{url_for('logout')}}">Sair</a>
+        </nav>
+    </header>
+    {%block conteudo%}
+    <main class="main">
+        <section class="hero">
+            <h1>Bem-vindo à Home</h1>
+            <p>Explore nosso site para conhecer mais sobre nossos serviços.</p>
+            <a href="{{url_for('usuarios')}}" class="btn">Lista de Usuarios</a>
+        </section>
+    </main>
+    {%endblock%} 
+    
+    <footer class="footer">
+        <p>&copy; 2024 Minha Página. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/layout.css">
+    <title>Login</title>
+</head>
+<body>
+     <div class="conteiner">
+        <h1>Login</h1>
+        <form action="{{url_for('login')}}" method="POST">    
+            <label>Email:</label>
+            <input type="email" name='email'placeholder="email" required>
+            <label>Senha:</label>
+            <input type="password" name="senha" placeholder="senha">
+            <p>Não possui conta?<a href="{{url_for('register')}}">Cadastre-se</a></p>
+            <input type="submit" value="enviar">
+        </form>
+     </div>
+</body>
+</html>

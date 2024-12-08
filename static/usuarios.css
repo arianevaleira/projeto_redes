@@ -1,0 +1,71 @@
+/* Definições gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
+
+a {
+    color:  rgb(101, 101, 226);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color:  rgb(101, 101, 226); /* Verde mais escuro para hover */
+}
+
+p {
+    margin: 20px;
+}
+
+/* Adicionando responsividade */
+@media (max-width: 600px) {
+    ul {
+        padding: 10px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
